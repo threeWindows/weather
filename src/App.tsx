@@ -18,7 +18,7 @@ function WeatherComponent() {
   useEffect(() => {
     const key = "f61691bad87049c390c104742232309&q";
 
-    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=${key}=${cities}&aqi=no`;
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${key}=${cities}&aqi=no`;
 
     fetch(apiUrl)
       .then((response) => {
